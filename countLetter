@@ -1,0 +1,10 @@
+function countLetter(input) {
+  let text = input[0];
+  let letter = input[1];
+
+  let count = text.split(letter).length - 1;
+
+  return count;
+}
+
+console.log(countLetter(["hello", "l"]));

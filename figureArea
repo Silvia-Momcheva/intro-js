@@ -1,0 +1,7 @@
+function calculateArea(dimensions) {
+  let [w, h, W, H] = dimensions.map(Number);
+  let totalArea = W * H + w * h - Math.min(w, W) * Math.min(h, H);
+
+  return totalArea;
+}
+console.log(calculateArea(["2", "4", "5", "3"]));

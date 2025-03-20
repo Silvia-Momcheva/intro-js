@@ -1,0 +1,18 @@
+function calculateDistance(points) {
+  let x1 = Number(points[0]);
+  let y1 = Number(points[1]);
+  let x2 = Number(points[2]);
+  let y2 = Number(points[3]);
+
+  let point1 = { x: x1, y: y1 };
+  let point2 = { x: x2, y: y2 };
+
+  let distance = Math.sqrt(
+    Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2)
+  );
+
+  console.log(distance);
+}
+
+calculateDistance([0, 0, 3, 4]);
+calculateDistance([1, 2, 4, 6]);

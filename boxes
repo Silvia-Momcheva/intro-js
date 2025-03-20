@@ -1,0 +1,11 @@
+function boxes(input) {
+  let bottles = Number(input[0]);
+  let capacity = Number(input[1]);
+
+  let boxes = Math.ceil(bottles / capacity);
+  console.log(boxes);
+}
+
+boxes([20, 5]);
+boxes([15, 7]);
+boxes([5, 10]);

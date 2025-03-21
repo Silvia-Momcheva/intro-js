@@ -1,0 +1,12 @@
+function triangleArea(input) {
+  let a = Number(input[0]);
+  let b = Number(input[1]);
+  let c = Number(input[2]);
+
+  let s = (a + b + c) / 2;
+
+  let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+  console.log(area);
+}
+triangleArea([3, 4, 5]); 

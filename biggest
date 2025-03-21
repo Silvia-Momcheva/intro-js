@@ -1,0 +1,13 @@
+function biggest(input) {
+  let num1 = Number(input[0]);
+  let num2 = Number(input[1]);
+  let num3 = Number(input[2]);
+
+  let largest = Math.max(num1, num2, num3);
+
+  console.log(largest);
+}
+
+biggest([4, -3, 19]);
+biggest([-11, -24, -36]); 
+biggest([-1, 4, 33]);

@@ -1,0 +1,13 @@
+function evenOrOdd(num) {
+  if (!Number.isInteger(num)) {
+    console.log("Invalid number");
+  } else if (num % 2 === 0) {
+    console.log("Even");
+  } else {
+    console.log("Odd");
+  }
+}
+
+evenOrOdd(7); 
+evenOrOdd(2); 
+evenOrOdd(4.5);

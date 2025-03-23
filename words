@@ -1,0 +1,11 @@
+function Words(input) {
+  let text = input[0];
+
+  let words = text.match(/\w+/g);
+
+  let upperCaseWords = words.map((word) => word.toUpperCase());
+
+  console.log(upperCaseWords.join(", "));
+}
+
+Words(["Hi, how are you?"]); 
